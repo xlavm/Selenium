@@ -1,0 +1,110 @@
+{
+  "id": "11f5c371-999d-4fe4-ad25-42f8ae6263fa",
+  "version": "2.0",
+  "name": "Instagram",
+  "url": "https://www.instagram.com/xlavm",
+  "tests": [{
+    "id": "0790de21-e2c6-4fc3-9d39-be4756d4f30b",
+    "name": "Unfollow",
+    "commands": [{
+      "id": "0a35b488-e39f-485d-80f9-ed3698e15082",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.instagram.com/xlavm/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "970c041c-d219-4d81-afb0-082adc6d4921",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "377ca128-9982-42bd-aa36-e68add863203",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Y8-fY:nth-child(3) .\\_7UhW9",
+      "targets": [
+        ["css=.Y8-fY:nth-child(3) .\\_7UhW9", "css:finder"],
+        ["xpath=//div[@id='react-root']/section/main/div/header/section/ul/li[3]/a/div", "xpath:idRelative"],
+        ["xpath=//li[3]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d05fa46-4427-4ea0-9cbf-80b8d902ed6d",
+      "comment": "",
+      "command": "while",
+      "target": "1==1 ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6b6c718-388b-40d7-858c-52a1ce1faafc",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//button/div[contains(.,'Following')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "fabbeb22-11ab-4edd-b313-64d2eb2c9f0c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button/div[contains(.,'Following')]",
+      "targets": [
+        ["css=#f21f955e39c36ec .\\_7UhW9", "css:finder"],
+        ["xpath=//div[@id='f21f955e39c36ec']/button/div", "xpath:idRelative"],
+        ["xpath=//li[3]/div/div[3]/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9749e18-e23f-4293-af46-3e975ff5a00c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.-Cab_",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "3432fd39-e479-4df1-8d14-a725dc630828",
+      "comment": "",
+      "command": "click",
+      "target": "css=.-Cab_",
+      "targets": [
+        ["css=.-Cab_", "css:finder"],
+        ["xpath=//div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unfollow')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28d7630e-d07e-408c-aa82-fd239e7c1392",
+      "comment": "",
+      "command": "//runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f98cdc18-45de-41e9-a5ad-d6f4376cbe87",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f799fac6-f710-4030-8784-4fe3cab80952",
+      "comment": "",
+      "command": "end",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b5da5469-135e-4d48-8984-af8d67909480",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0790de21-e2c6-4fc3-9d39-be4756d4f30b"]
+  }],
+  "urls": ["https://www.instagram.com/", "https://www.instagram.com/xlavm"],
+  "plugins": []
+}
